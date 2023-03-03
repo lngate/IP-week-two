@@ -1,4 +1,4 @@
-const maleAkanNames{
+const maleAkanNames {
     Sunday: Kwasi, 
     Monday: Kwadwo,
     Tuesday: Kwabena,
@@ -7,7 +7,7 @@ const maleAkanNames{
     Friday: Kofi,
     Saturday: Kwame
 }
-const femaleAkanNames{
+const femaleAkanNames {
     Sunday: Akosua,
     Monday: Adwoa,
     Tuesday: Abenaa,
@@ -16,3 +16,7 @@ const femaleAkanNames{
     Friday: Afua,
     Saturday: Ama
 }
+function Birthday() {
+    document.getElementById("birthday").value = "";
+  }
+  let akanNameDay = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7
