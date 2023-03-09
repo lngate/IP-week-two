@@ -1,22 +1,17 @@
-const maleAkanNames {
-    Sunday: Kwasi, 
-    Monday: Kwadwo,
-    Tuesday: Kwabena,
-    Wednesday: Kwaku,
-    Thursday:  Yaw,
-    Friday: Kofi,
-    Saturday: Kwame
-}
-const femaleAkanNames {
-    Sunday: Akosua,
-    Monday: Adwoa,
-    Tuesday: Abenaa,
-    Wednesday: Akua,
-    Thursday:  Yaa,
-    Friday: Afua,
-    Saturday: Ama
-}
-function Birthday() {
-    document.getElementById("birthday").value = "";
-  }
-  let akanNameDay = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7
+function viewdate() {   
+    var x = document.getElementById("birthday").value;   
+    document.getElementById("demo").innerHTML = x;   
+    }
+
+// var date = birthDate;
+// var arr = date.split(/ |,/);
+// console.log('date: ', arr[0]);
+// console.log('month: ', arr[1]);
+// console.log('year: ', arr[2]);
+
+// document.getElementById("birthday").addEventListener("change", function() {
+//     var input = this.value;
+//     var dateEntered = new Date(input);
+//     console.log(input); //e.g. 2015-11-13
+//     console.log(dateEntered); //e.g. Fri Nov 13 2015 00:00:00 GMT+0000 (GMT Standard Time)
+// });
