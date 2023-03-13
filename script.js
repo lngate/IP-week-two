@@ -1,20 +1,11 @@
 function viewDateGender() {   
-    var showBirthdate = document.getElementById("birthday").value;  
+    var showBirthdate = document.getElementById("birthday").valueAsDate;  
     var genderPerson = document.getElementById("gender").value;
+    var day = showBirthdate.getDay();
+    var weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    
     document.getElementById("viewDate").innerHTML = showBirthdate;   
     document.getElementById("viewGender").innerHTML = genderPerson;
+    document.getElementById("dayOfWeek2").textContent = weekday[day];
     }
 
-
-function dateSplit(){
-    var date = showBirthdate;
-    const arr = date.split("-");
-    console.log(arr)
-        let YY =console.log('year: ', arr[0]);
-        let MM = console.log('month: ', arr[1]);
-        let DD = console.log('Date: ', arr[2]);
-}
-
-alert(arr[0])
-alert(arr[1])
-alert(arr[2])
