@@ -1,6 +1,8 @@
 function viewdate() {   
-    var showBirthdate = document.getElementById("birthday").value;   
+    var showBirthdate = document.getElementById("birthday").value;  
+    var genderPerson = document.getElementById("gender").value;
     document.getElementById("viewDate").innerHTML = showBirthdate;   
+    document.getElementById("viewGender").innerHTML = genderPerson;
     }
 
 
