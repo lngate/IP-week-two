@@ -4,8 +4,8 @@ function viewDateGender() {
     var day = showBirthdate.getDay();
     var weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     
-    document.getElementById("viewDate").innerHTML = showBirthdate;   
+    // document.getElementById("viewDate").innerHTML = showBirthdate;   
     document.getElementById("viewGender").innerHTML = genderPerson;
-    document.getElementById("dayOfWeek2").textContent = weekday[day];
+    var dayBorn = document.getElementById("dayOfWeek2").textContent = weekday[day];
     }
 
