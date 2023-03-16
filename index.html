@@ -9,20 +9,24 @@
     
 </head>
 <body>
+    <h3> Feed in your birthdate and Gender see your Akan Name!!</h3>
         <label for="">Enter Birthdate:</label>
         <input type="date" placeholder="dd:mm:yy" id="birthday" name="birthday">
         <label for=""> Enter Gender</label>
         <select id="gender">
             <option value="male">Male</option>
-            <option value="female">female</option>
+            <option value="female">Female</option>
           </select>
-        <button onclick="viewDateGender()"> Submit  
+        <button onclick="main()"> Submit  
         </button>   
     
 
- <h2 id="viewDate"></h2>
- <h2 id="viewGender"></h2>
- <h3 id="dayOfWeek2"></h3>
+ <h4 id="viewDate"></h4>
+ <h4 id="viewGender"></h4>
+ <h4 id="dayOfWeek2"></h4>
+
+ <p>your Akan name is:- </p>
+ <input id= "akanNameOutput" type="text">
     
     <script src="script.js"></script>
 </body>
