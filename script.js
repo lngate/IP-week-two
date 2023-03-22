@@ -7,12 +7,12 @@ let genderPerson = null;
 
 function viewDateGender() {   
     let showBirthdate = document.getElementById("birthday").valueAsDate;  
-    let gender = document.getElementById("gender");
+    let genderPerson = document.getElementById("gender");
     let day = showBirthdate.getDay();
     let weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     
     // document.getElementById("viewDate").innerHTML = showBirthdate;   
-      document.getElementById("viewGender").innerHTML ="Gender selected is " + genderPerson;
+      let gender = document.getElementById("viewGender").innerHTML ="Gender selected is " + genderPerson;
       let dayBorn = document.getElementById("dayOfWeek2").textContent =  "You were born on " + weekday[day];
     } 
 
